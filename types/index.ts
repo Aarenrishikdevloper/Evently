@@ -49,6 +49,7 @@ export type UpdateEventParams = {
     url: string
   }
   path: string
+  evenId:string
 }
 
 export type DeleteEventParams = {
