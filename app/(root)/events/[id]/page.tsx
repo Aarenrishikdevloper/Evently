@@ -79,7 +79,7 @@ const DetailPage = async({params:{id}, searchParams}:SearchParamProps) => {
         </section>
         <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
            <h2 className="h2-bold">Related Events</h2>
-            <Collection data={Relatedevent?.data} emptyTitle='No Events Found' emptyStateSubtext={"Come Back later"} collectionType="All_Events" limit={6} page={6} totalPages={6}/>
+            <Collection data={Relatedevent?.data} emptyTitle='No Events Found' emptyStateSubtext={"Come Back later"} collectionType="All_Events" limit={3} page={searchParams.page as string} totalPages={Relatedevent?.totalpages}/>
         </section>
     </>
   );
