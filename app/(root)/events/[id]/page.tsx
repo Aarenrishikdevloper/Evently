@@ -24,7 +24,7 @@ const DetailPage = async({params:{id}, searchParams}:SearchParamProps) => {
         <section className='flex justify-center bg-primary-50 bg-dotted-pattern bg-contain'>
            <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl"  >
               
-               <img src={event.imageUrl} alt="HeroImage"  className={"h-full min-h-[300px]  object-cover object-center" }/>
+               <image src={event.imageUrl} height={1000} width={1000} alt="HeroImage"  className={"h-full min-h-[300px]  object-cover object-center" }/>
                
                <div className="flex w-full flex-col gap-8 p-5 md:p-10">
                    <div className="flex flex-col gap-6">
